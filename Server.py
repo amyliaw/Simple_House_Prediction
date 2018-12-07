@@ -233,6 +233,6 @@ def server(status,sqft,zipcode,year,bedroom,bathroom,mi,ma,mis,mas):
 # In[ ]:
 
 
-if __name__ == '__main__':
-    app.run() #The port will be 5000
 
+if __name__ == '__main__':
+ app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)), debug=True)
